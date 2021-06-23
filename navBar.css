@@ -1,0 +1,30 @@
+#main_menu >li{
+    display: inline-block;
+            font-weight: bold;
+            color: blue;
+            margin-left: 70px;
+            height: 32px;
+            line-height: 32px;
+}
+
+#sub-menu li:hover {
+    background: white;
+}
+
+#sub-menu {
+    list-style-type: none;
+    background: #3abaef;
+    padding: 0;
+    position: absolute;
+    display: none;
+}
+
+#sub-menu li {
+    color: black;
+    width: 112px;
+    background: #3abaef;
+    padding-left: 32px;
+}
+#provinces:hover .sub-menu {
+    display: block;
+}

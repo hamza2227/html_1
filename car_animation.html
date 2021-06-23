@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes car_move{
+           from{
+               left: 0%;
+           }
+
+           to{
+               left: 80%;
+           }
+
+        }
+
+        @keyframes tire_move{
+            from{
+                /* left: 0%; */
+                transform: rotate(0deg)
+            }
+
+            to{
+                /* left: 80%; */
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fan_move{
+            from{
+                transform: rotate(0deg);
+            }
+
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        
+        .my_car{
+            animation: car_move 5s ease-in-out 0s;
+            position: relative;
+        }
+        .car{
+            
+            width: 390px;
+            position: absolute;
+        }
+
+        .tires1{
+            width: 63px;
+            position: relative;
+            top: 101px;
+            left: 47px;
+            animation: tire_move 5s ease-in-out 0s;
+            /* transform: rotate(360deg); */
+        }
+
+        .tires2{
+            width: 63px;
+            position: relative;
+            top: 102px;
+            left: 207px;
+            animation: tire_move 5s ease-in-out 0s;
+            /* transform: rotate(360deg); */
+        }
+
+        .road{
+            width: 100%;
+        }
+
+        .fan{
+            animation: fan_move 1s linear 0s infinite;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="my_car">
+       <img class="car" src="car.png">
+       <img class="tires1" src="tire.png">
+       <img class="tires2" src="tire.png">
+    
+    </div>
+       
+    
+    <img class="road" src="road.png">
+    
+
+    <img class="fan" src="fan.png" alt="">
+
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+.grid_1{
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 125px;
+}
+
+.grid_2{
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+#parent{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template:
+    "a1 b1 c1"
+    "d1 e1 e1"
+    "f1 e1 e1";
+    grid-gap: 5px;
+    /* display: inline-block; */
+}
+#a{
+    background: blueviolet;
+    grid-area: a1;
+}
+
+#b{
+    background: chartreuse;
+    grid-area: b1;
+}
+
+#c{
+    background: chocolate;
+    grid-area: c1;
+}
+
+#d{
+    background: cyan;
+    grid-area: d1;
+}
+
+#e{
+    background: green;
+    grid-area: e1;
+}
+
+#f{
+    background: lightcoral;
+    grid-area: f1;
+}
+
+
+
+/* .............. */
+/* ............ */
+/* ......... */
+/* ....... */
+
+#child{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template:
+    "g1 h1 i1"
+    "g1 h1 i1"
+    "j1 j1 j1";
+    grid-gap: 5px;
+}
+
+#g{
+    background: white;
+    border: black solid;
+    grid-area: g1;
+}
+
+#h{
+    background: white;
+    border: black solid;
+    grid-area: h1;
+}
+
+#i{
+    background: white;
+    border: black solid;
+    grid-area: i1;
+}
+
+#j{
+    background: white;
+    border: black solid;
+    grid-area: j1;
+}
+
+/* .............. */
+/* ............ */
+/* .......... */
+/* ........ */
+#area{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    border: 1px black solid;
+    grid: 30vh 50vh 20vh / 20vw 50vw 30vw;
+}
+#area div{
+    border: 1px solid black;
+}
+
+
+
+
